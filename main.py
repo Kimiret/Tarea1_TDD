@@ -1,4 +1,5 @@
 from datetime import datetime
 
 def ohce_greeting(name):
-    return '¡Buenos días Juan!'
+    # mensaje de saludo
+    return f"¡Buenos días {name}!"
