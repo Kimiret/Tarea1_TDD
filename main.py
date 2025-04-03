@@ -10,3 +10,6 @@ def ohce_greeting(name):
         return f"¡Buenas tardes {name}!"
     else:
         return f"¡Buenas noches {name}!"
+    
+def ohce_echo(word):
+    pass
