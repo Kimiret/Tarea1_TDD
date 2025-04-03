@@ -30,3 +30,15 @@ def test_ohce_greeting(mock_datetime):
     #Saludo Tarde con nombre Luis
     mock_datetime.now.return_value = datetime(2023, 10, 1, 17, 0, 0)
     assert ohce_greeting('Luis') == '¡Buenas tardes Luis!'
+
+    #Saludo Noche con nombre Juan
+    mock_datetime.now.return_value = datetime(2023, 10, 1, 22, 0, 0)
+    assert ohce_greeting('Juan') == '¡Buenas noches Juan!'
+
+    #Saludo Noche con nombre Pedro
+    mock_datetime.now.return_value = datetime(2023, 10, 1, 0, 0, 0)
+    assert ohce_greeting('Pedro') == '¡Buenas noches Pedro!'
+
+    #Saludo Noche con nombre Luis
+    mock_datetime.now.return_value = datetime(2023, 10, 1, 2, 0, 0)
+    assert ohce_greeting('Luis') == '¡Buenas noches Luis!'
