@@ -21,4 +21,4 @@ def ohce_palindrome(word):
 
 # Función que chequea si una palabra es el comando de salida
 def ohce_stop(word):
-    pass
+    return True
