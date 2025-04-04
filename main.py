@@ -12,4 +12,4 @@ def ohce_greeting(name):
         return f"¡Buenas noches {name}!"
     
 def ohce_echo(word):
-    pass
+    return 'aloh'
