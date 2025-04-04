@@ -18,3 +18,7 @@ def ohce_echo(word):
 # Función que chequea si una palabra es un palíndromo
 def ohce_palindrome(word):
     return word == word[::-1]
+
+# Función que chequea si una palabra es el comando de salida
+def ohce_stop(word):
+    pass
