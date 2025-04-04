@@ -1,4 +1,5 @@
 from datetime import datetime
+import sys
 
 
 # Función que devuelve un saludo basado en la hora actual
@@ -22,3 +23,21 @@ def ohce_palindrome(word):
 # Función que chequea si una palabra es el comando de salida
 def ohce_stop(word):
     return word == 'Stop!'
+
+# Función principal que ejecuta el programa
+if __name__ == "__main__":
+    name = None
+    if len(sys.argv) == 2:
+        name = sys.argv[1]
+    else:
+        print("Error: Debe ingresar un nombre como argumento.")
+        sys.exit(1)
+    print(ohce_greeting(name))
+    while True:
+        word = input('> ')
+        if ohce_stop(word):
+            print(f'Adios {name}')
+            break
+        print(ohce_echo(word))
+        if ohce_palindrome(word):
+            print('¡Bonita palabra!')
