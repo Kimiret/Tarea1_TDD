@@ -14,3 +14,7 @@ def ohce_greeting(name):
 # Función que devuelve una palabra al revés
 def ohce_echo(word):
     return word[::-1]
+
+# Función que chequea si una palabra es un palíndromo
+def ohce_palindrome(word):
+    pass
