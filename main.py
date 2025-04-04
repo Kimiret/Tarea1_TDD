@@ -10,6 +10,7 @@ def ohce_greeting(name):
         return f"¡Buenas tardes {name}!"
     else:
         return f"¡Buenas noches {name}!"
-    
+
+# Función que devuelve una palabra al revés
 def ohce_echo(word):
-    return 'aloh'
+    return word[::-1]
