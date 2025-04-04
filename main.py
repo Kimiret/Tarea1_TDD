@@ -17,4 +17,4 @@ def ohce_echo(word):
 
 # Función que chequea si una palabra es un palíndromo
 def ohce_palindrome(word):
-    return word == 'aibofobia'
+    return word == word[::-1]
